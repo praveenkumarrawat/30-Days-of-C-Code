@@ -1,0 +1,44 @@
+/*
+Input Format
+The first line contains an integer that you must sum with .
+The second line contains a double that you must sum with .
+The third line contains a string that you must concatenate with .
+
+Output Format
+
+Print the sum of both integers on the first line, the sum of both doubles (scaled to  decimal place) on the second line, and then the two concatenated strings on the third line.
+
+Sample Input
+
+12
+4.0
+is the best place to learn and practice coding!
+Sample Output
+
+16
+8.0
+HackerRank is the best place to learn and practice coding!
+*/
+
+#include <iostream>
+#include <iomanip>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
+    int i2;
+    double d2;
+    string s2;
+    cin >> i2;
+    cin >> d2;
+    cin.get();
+    getline(cin, s2);
+    cout << i+i2 << endl;
+    cout<< std::fixed <<std::setprecision(1)<< d + d2 << endl;
+    cout << s << s2;
+
+    return 0;
